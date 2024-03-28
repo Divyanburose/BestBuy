@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-28T15:09:52 IST" name="Suite" finished-at="2024-03-28T15:19:29 IST" duration-ms="576424">
+    <groups>
+    </groups>
+    <test started-at="2024-03-28T15:09:52 IST" name="RegressionTest" finished-at="2024-03-28T15:16:09 IST" duration-ms="376298">
+      <class name="test.TC003_BrokenURL">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.TC003_BrokenURL@c430e6c]" started-at="2024-03-28T15:14:09 IST" name="launchBrowser" finished-at="2024-03-28T15:14:15 IST" duration-ms="6591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="brokenURL()[pri:0, instance:test.TC003_BrokenURL@c430e6c]" started-at="2024-03-28T15:14:15 IST" name="brokenURL" finished-at="2024-03-28T15:16:09 IST" duration-ms="113455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brokenURL -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TC003_BrokenURL@c430e6c]" started-at="2024-03-28T15:16:09 IST" name="browserClose" finished-at="2024-03-28T15:16:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.TC003_BrokenURL -->
+      <class name="test.TC002_SignupPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:09:53 IST" name="setup" finished-at="2024-03-28T15:09:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:11:51 IST" name="launchBrowser" finished-at="2024-03-28T15:12:00 IST" duration-ms="9051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="signup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:12:00 IST" name="signup" data-provider="excelData" finished-at="2024-03-28T15:12:13 IST" duration-ms="13147" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anbu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rose]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[anburose159@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[&quot;Ten+one=11&quot;]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[&quot;Ten+one=11&quot;]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9043282956]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/identity/global/createAccount" data-track="Notification:...">Create Account</a> is not clickable at point (971, 408). Other element would receive the click: <div id="survey_blue_border" class="modal-dialog modal-custom">...</div>
+  (Session info: chrome=123.0.6312.86)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b65809d962c0f9992fb31caf3cdac315, clickElement {id=f.7DB1804BBA6EF3CCACC3FEC1834134EC.d.D53BB24E8C046B0D0338E785E64B1FCF.e.73}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\ANBURO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57746/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b65809d962c0f9992fb31caf3cdac315)] -> xpath: //a[text()="Create Account"]]
+Session ID: b65809d962c0f9992fb31caf3cdac315]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/identity/global/createAccount" data-track="Notification:...">Create Account</a> is not clickable at point (971, 408). Other element would receive the click: <div id="survey_blue_border" class="modal-dialog modal-custom">...</div>
+  (Session info: chrome=123.0.6312.86)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b65809d962c0f9992fb31caf3cdac315, clickElement {id=f.7DB1804BBA6EF3CCACC3FEC1834134EC.d.D53BB24E8C046B0D0338E785E64B1FCF.e.73}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\ANBURO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57746/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b65809d962c0f9992fb31caf3cdac315)] -> xpath: //a[text()="Create Account"]]
+Session ID: b65809d962c0f9992fb31caf3cdac315
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pages.Homepage.createAccountButton(Homepage.java:26)
+at test.TC002_SignupPageTest.signup(TC002_SignupPageTest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:12:14 IST" name="browserClose" finished-at="2024-03-28T15:12:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:12:14 IST" name="launchBrowser" finished-at="2024-03-28T15:12:30 IST" duration-ms="16693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="signup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:12:30 IST" name="signup" data-provider="excelData" finished-at="2024-03-28T15:12:59 IST" duration-ms="28556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[`]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rose]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[anburose159@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[&quot;Ten+one=11&quot;]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[`]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9044282956]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:12:59 IST" name="browserClose" finished-at="2024-03-28T15:12:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:12:59 IST" name="launchBrowser" finished-at="2024-03-28T15:13:11 IST" duration-ms="11994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="signup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:13:11 IST" name="signup" data-provider="excelData" finished-at="2024-03-28T15:13:37 IST" duration-ms="25204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anbu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rose]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[anburose159@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[&quot;Ten+one=11&quot;]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[&quot;Ten+one=11&quot;]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9043282956]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:13:37 IST" name="browserClose" finished-at="2024-03-28T15:13:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:13:37 IST" name="launchBrowser" finished-at="2024-03-28T15:13:43 IST" duration-ms="6264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="signup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:13:43 IST" name="signup" data-provider="excelData" finished-at="2024-03-28T15:14:08 IST" duration-ms="25148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anbu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rose]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[anbu159@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[&quot;Ten+one=11&quot;]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[&quot;Ten+one=11&quot;]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[`]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TC002_SignupPageTest@4d0d9fe7]" started-at="2024-03-28T15:14:09 IST" name="browserClose" finished-at="2024-03-28T15:14:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.TC002_SignupPageTest -->
+      <class name="test.TC001_LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:09:53 IST" name="setup" finished-at="2024-03-28T15:09:53 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:09:54 IST" name="launchBrowser" finished-at="2024-03-28T15:09:58 IST" duration-ms="3853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:09:58 IST" name="logintest" data-provider="excelData" finished-at="2024-03-28T15:10:15 IST" duration-ms="17048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anburose159@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[\"Ten+one=11\"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:10:20 IST" name="browserClose" finished-at="2024-03-28T15:10:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:10:20 IST" name="launchBrowser" finished-at="2024-03-28T15:10:29 IST" duration-ms="8928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:10:29 IST" name="logintest" data-provider="excelData" finished-at="2024-03-28T15:10:47 IST" duration-ms="18412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anbu159@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ten+one=11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:10:48 IST" name="browserClose" finished-at="2024-03-28T15:10:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:10:48 IST" name="launchBrowser" finished-at="2024-03-28T15:10:52 IST" duration-ms="4541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:10:52 IST" name="logintest" data-provider="excelData" finished-at="2024-03-28T15:11:12 IST" duration-ms="19492" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anburose159gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[\"Ten+one=11\"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:11:12 IST" name="browserClose" finished-at="2024-03-28T15:11:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:11:12 IST" name="launchBrowser" finished-at="2024-03-28T15:11:18 IST" duration-ms="5714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:11:18 IST" name="logintest" data-provider="excelData" finished-at="2024-03-28T15:11:50 IST" duration-ms="32358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anburose15@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[\"Tenone=11\"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TC001_LoginTest@533bda92]" started-at="2024-03-28T15:11:50 IST" name="browserClose" finished-at="2024-03-28T15:11:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.TC001_LoginTest -->
+    </test> <!-- RegressionTest -->
+    <test started-at="2024-03-28T15:16:11 IST" name="RegressionTest1" finished-at="2024-03-28T15:19:29 IST" duration-ms="198158">
+      <class name="test.TC006_Cart">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.TC006_Cart@6e2829c7]" started-at="2024-03-28T15:18:31 IST" name="launchBrowser" finished-at="2024-03-28T15:18:39 IST" duration-ms="7752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="cart()[pri:0, instance:test.TC006_Cart@6e2829c7]" started-at="2024-03-28T15:18:39 IST" name="cart" finished-at="2024-03-28T15:19:29 IST" duration-ms="49772" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/site/refrigerators/french-door-refrigerators/abcat0901004.c?id=abcat0901004" data-track="[context:widgetType=flex,linkContent=...,linkRegion=Body,linkPlacement=c2w1]" class="flex-link">French door refrigerators</a> is not clickable at point (590, 567). Other element would receive the click: <div id="survey_window" class="modal fade modal-open in" role="dialog" style="margin-top: 170px; display: block;">...</div>
+  (Session info: chrome=123.0.6312.86)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ff67915be194b18b49a7b024aa066c3, clickElement {id=f.D0A9C9A2B9F2BC83BBCDA0D782C7F385.d.8446CA884BC4DD53CB3890823ED0C63C.e.419}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\ANBURO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59238/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8ff67915be194b18b49a7b024aa066c3)] -> xpath: (//a[text()="French door refrigerators"])[1]]
+Session ID: 8ff67915be194b18b49a7b024aa066c3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/site/refrigerators/french-door-refrigerators/abcat0901004.c?id=abcat0901004" data-track="[context:widgetType=flex,linkContent=...,linkRegion=Body,linkPlacement=c2w1]" class="flex-link">French door refrigerators</a> is not clickable at point (590, 567). Other element would receive the click: <div id="survey_window" class="modal fade modal-open in" role="dialog" style="margin-top: 170px; display: block;">...</div>
+  (Session info: chrome=123.0.6312.86)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ff67915be194b18b49a7b024aa066c3, clickElement {id=f.D0A9C9A2B9F2BC83BBCDA0D782C7F385.d.8446CA884BC4DD53CB3890823ED0C63C.e.419}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\ANBURO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59238/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8ff67915be194b18b49a7b024aa066c3)] -> xpath: (//a[text()="French door refrigerators"])[1]]
+Session ID: 8ff67915be194b18b49a7b024aa066c3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pages.RefrigeratorPage.refrigerator(RefrigeratorPage.java:14)
+at test.TC006_Cart.cart(TC006_Cart.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cart -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TC006_Cart@6e2829c7]" started-at="2024-03-28T15:19:29 IST" name="browserClose" finished-at="2024-03-28T15:19:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.TC006_Cart -->
+      <class name="test.TC004_TitleValidation">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.TC004_TitleValidation@33ecda92]" started-at="2024-03-28T15:16:11 IST" name="launchBrowser" finished-at="2024-03-28T15:16:18 IST" duration-ms="7121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="titleValidation()[pri:0, instance:test.TC004_TitleValidation@33ecda92]" started-at="2024-03-28T15:16:18 IST" name="titleValidation" finished-at="2024-03-28T15:17:41 IST" duration-ms="83294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleValidation -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TC004_TitleValidation@33ecda92]" started-at="2024-03-28T15:17:42 IST" name="browserClose" finished-at="2024-03-28T15:17:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.TC004_TitleValidation -->
+      <class name="test.TC005_BottomURLValidation">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.TC005_BottomURLValidation@14fc5f04]" started-at="2024-03-28T15:17:42 IST" name="launchBrowser" finished-at="2024-03-28T15:17:50 IST" duration-ms="8175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="bottomURL()[pri:0, instance:test.TC005_BottomURLValidation@14fc5f04]" started-at="2024-03-28T15:17:50 IST" name="bottomURL" finished-at="2024-03-28T15:18:30 IST" duration-ms="40146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bottomURL -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TC005_BottomURLValidation@14fc5f04]" started-at="2024-03-28T15:18:31 IST" name="browserClose" finished-at="2024-03-28T15:18:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.TC005_BottomURLValidation -->
+    </test> <!-- RegressionTest1 -->
+  </suite> <!-- Suite -->
+</testng-results>

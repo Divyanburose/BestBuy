@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 578.57 s <<< FAILURE! - in TestSuite
+test.TC002_SignupPageTest.signup[Anbu, Rose, anburose159@gmail.com, &quot;Ten+one=11&quot;, &quot;Ten+one=11&quot;, 9043282956](1)  Time elapsed: 14.085 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="/identity/global/createAccount" data-track="Notification:...">Create Account</a> is not clickable at point (971, 408). Other element would receive the click: <div id="survey_blue_border" class="modal-dialog modal-custom">...</div>
+  (Session info: chrome=123.0.6312.86)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b65809d962c0f9992fb31caf3cdac315, clickElement {id=f.7DB1804BBA6EF3CCACC3FEC1834134EC.d.D53BB24E8C046B0D0338E785E64B1FCF.e.73}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\ANBURO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57746/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b65809d962c0f9992fb31caf3cdac315)] -> xpath: //a[text()="Create Account"]]
+Session ID: b65809d962c0f9992fb31caf3cdac315
+	at test.TC002_SignupPageTest.signup(TC002_SignupPageTest.java:26)
+
+test.TC006_Cart.cart  Time elapsed: 49.816 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="/site/refrigerators/french-door-refrigerators/abcat0901004.c?id=abcat0901004" data-track="[context:widgetType=flex,linkContent=...,linkRegion=Body,linkPlacement=c2w1]" class="flex-link">French door refrigerators</a> is not clickable at point (590, 567). Other element would receive the click: <div id="survey_window" class="modal fade modal-open in" role="dialog" style="margin-top: 170px; display: block;">...</div>
+  (Session info: chrome=123.0.6312.86)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ff67915be194b18b49a7b024aa066c3, clickElement {id=f.D0A9C9A2B9F2BC83BBCDA0D782C7F385.d.8446CA884BC4DD53CB3890823ED0C63C.e.419}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\ANBURO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59238/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8ff67915be194b18b49a7b024aa066c3)] -> xpath: (//a[text()="French door refrigerators"])[1]]
+Session ID: 8ff67915be194b18b49a7b024aa066c3
+	at test.TC006_Cart.cart(TC006_Cart.java:18)
+
